@@ -7,6 +7,7 @@ export type ServerlessComponentInputs = {
   nextStaticDir?: string;
   bucketName?: string;
   bucketRegion?: string;
+  accelerated?: boolean;
   publicDirectoryCache?: PublicDirectoryCache;
   memory?: number | { defaultLambda?: number; apiLambda?: number };
   timeout?: number | { defaultLambda?: number; apiLambda?: number };

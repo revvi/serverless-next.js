@@ -217,7 +217,7 @@ class NextjsComponent extends Component {
     ]);
 
     const bucketOutputs = await bucket({
-      accelerated: true,
+      accelerated: inputs.accelerated || false,
       name: inputs.bucketName,
       region: bucketRegion
     });
